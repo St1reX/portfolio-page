@@ -5,8 +5,13 @@ export default {
     fontFamily: {
       HindMysuru: ['Hind Mysuru', 'sans-serif'],
       Kanit: ['Kanit', 'sans-serif'],
+      JetBrains: ['JetBrains Mono', 'monospace'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'main-green': '#32de84',
+      },
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {
