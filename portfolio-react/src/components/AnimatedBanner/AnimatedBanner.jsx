@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 import { ArrowDownIcon } from '@heroicons/react/16/solid';
-import CatSVG from '../../assets/svg/undraw_cat_epte.svg';
 
 export default function AnimatedBanner() {
   const headerTyper = useRef(null);
@@ -47,7 +46,7 @@ export default function AnimatedBanner() {
       contentType: 'null',
       preStringTyped: () => {
         const cursor = document.querySelector('.typed-cursor');
-        cursor.classList.add('text-8xl');
+        cursor.classList.add('text-8xl', 'select-none');
       },
     });
 
@@ -62,7 +61,7 @@ export default function AnimatedBanner() {
         <div className="flex mb-6">
           <h2
             ref={headerTyper}
-            className="text-main-green text-8xl font-extrabold min-h-24"
+            className="text-main-green text-8xl font-extrabold min-h-24 select-none"
           ></h2>
         </div>
         <p className="text-xl mb-20">
@@ -74,11 +73,6 @@ export default function AnimatedBanner() {
           <ArrowDownIcon className="w-6 h-6" />
         </button>
       </div>
-      <img
-        className="h-32 absolute bottom-0 right-0"
-        src={CatSVG}
-        alt="Cat Picture"
-      />
     </div>
   );
 }
