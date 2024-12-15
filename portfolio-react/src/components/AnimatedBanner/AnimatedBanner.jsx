@@ -56,7 +56,7 @@ export default function AnimatedBanner() {
   }, []);
 
   return (
-    <div className="flex content-center justify-center font-JetBrains">
+    <div className="w-full min-h-[75vh] flex content-center justify-center">
       <div className="flex flex-col items-center gap-4">
         <div className="flex mb-6">
           <h2
@@ -68,10 +68,10 @@ export default function AnimatedBanner() {
           Programming for me is something more than just writing code... Here my
           own playground starts.
         </p>
-        <button className="btn btn-outline">
-          <a href="#">Show more</a>
+        <a href="#Skills" className="btn btn-outline">
+          Show more
           <ArrowDownIcon className="w-6 h-6" />
-        </button>
+        </a>
       </div>
     </div>
   );
