@@ -27,10 +27,10 @@ export default function SkillsSection() {
   return (
     <>
       <div
-        className="group w-full bg-zinc-800 flex justify-between px-[10%] py-10"
+        className="group w-full bg-zinc-800 flex justify-between px-[15%] py-10"
         id="Skills"
       >
-        <div className="flex flex-col max-w-[50%] min-h-[40vh] mt-10">
+        <div className="flex flex-col max-w-[50%] min-h-[40vh] min-w-[320px] mt-10">
           <h2 class="w-fit text-4xl text-white font-bold mb-6 relative">
             My Skills
             <span class="absolute left-0 bottom-0 h-1 bg-main-green w-0 group-hover:w-full transition-all duration-500"></span>
@@ -47,8 +47,9 @@ export default function SkillsSection() {
             <span className="text-main-green"> Bootstrap</span>, alongside
             <span className="text-main-green"> SCSS</span> for styling.
             Currently expanding my expertise in modern frameworks like
-            <span className="text-main-green"> React</span> and
-            <span className="text-main-green"> Node.js</span>.
+            <span className="text-main-green"> React</span>,
+            <span className="text-main-green"> Node.js</span>,
+            <span className="text-main-green"> ASP.NET</span>.
           </p>
         </div>
         <SkillsCarousel imgArray={carouselItems} pathCore={pathCore} />
