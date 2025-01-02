@@ -1,8 +1,8 @@
 export default function Header() {
   const navItems = [
     { title: 'Introduction', url: '#introduction', style: 'mr-7' },
-    { title: 'Skills', url: '#skills', style: 'mr-7' },
-    { title: 'Projects', url: '#projects', style: 'mr-7' },
+    { title: 'Skills', url: '#Skills', style: 'mr-7' },
+    { title: 'Projects', url: '#Projects', style: 'mr-7' },
     { title: 'Goals', url: '#goals', style: '' },
   ];
 
