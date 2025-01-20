@@ -12,7 +12,7 @@ export default function ProjectContainer({
   const [ref, isVisible] = useAnimateOnScroll();
 
   return (
-    <div className="m-8">
+    <div className="m-8 flex">
       <div
         ref={ref}
         className={`card bg-base-100 w-96 duration-700 ${
@@ -23,7 +23,7 @@ export default function ProjectContainer({
           <img
             src={pathCore + imgData.name}
             alt={imgData.alt}
-            className="rounded-xl h-[170px]"
+            className="rounded-xl h-[130px]"
           />
         </figure>
         <div className="card-body items-center text-center">

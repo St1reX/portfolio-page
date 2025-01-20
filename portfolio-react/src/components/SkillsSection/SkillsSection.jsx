@@ -32,7 +32,7 @@ export default function SkillsSection() {
       >
         <div className="flex flex-col max-w-[50%] min-h-[40vh] min-w-[320px] mt-10">
           <h2 className="w-fit text-4xl text-white font-bold mb-6 relative">
-            My Skills
+            #Skills
             <span className="absolute left-0 bottom-0 h-1 bg-main-green w-0 group-hover:w-full transition-all duration-500"></span>
           </h2>
           <p>

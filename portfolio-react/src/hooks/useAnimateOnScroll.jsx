@@ -11,7 +11,7 @@ export default function useAnimateOnScroll() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.4 }
     );
 
     if (ref.current) {

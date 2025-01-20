@@ -2,22 +2,20 @@ const projectsData = [
   {
     photoData: { name: 'InstallingBot.png', alt: 'InstallingBot' },
     title: 'InstallingBot',
-    description:
-      'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum',
+    description: 'A bot that automates daily tasks on the Installing platform.',
     redirection: 'https://github.com/St1reX/installing-bot.git',
   },
   {
-    photoData: { name: 'SeleneIO.png', alt: 'InstallingBot' },
+    photoData: { name: 'SeleneIO.png', alt: 'SeleneIO' },
     title: 'SeleneIO || E-Shop',
     description:
-      'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum',
+      'A prototype e-shop with responsive design and many fancy options.',
     redirection: 'https://github.com/St1reX/Selene.io.git',
   },
   {
-    photoData: { name: 'PasswordGenerator.png', alt: 'InstallingBot' },
+    photoData: { name: 'PasswordGenerator.png', alt: 'Password Generator' },
     title: 'Password Generator',
-    description:
-      'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum',
+    description: 'A tool for generating secure and customizable passwords.',
     redirection: 'https://github.com/St1reX/password-generator.git',
   },
 ];

@@ -8,12 +8,12 @@ export default function ProjectsSection() {
     <div className="py-20" id="Projects">
       <div className="flex justify-center">
         <h2 className="w-fit text-4xl text-white font-bold mb-6 relative">
-          My Projects
+          #Projects
         </h2>
       </div>
 
       <div className="flex justify-center align-middle">
-        {projectsData.map((projectData, index) => (
+        {projectsData.map((projectData) => (
           <ProjectContainer
             key={projectData.photoData.name}
             cardTitle={projectData.title}
