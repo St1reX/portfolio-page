@@ -8,14 +8,14 @@ const projectsData = [
   },
   {
     photoData: { name: 'SeleneIO.png', alt: 'InstallingBot' },
-    title: 'InstallingBot',
+    title: 'SeleneIO || E-Shop',
     description:
       'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum',
     redirection: 'https://github.com/St1reX/Selene.io.git',
   },
   {
     photoData: { name: 'PasswordGenerator.png', alt: 'InstallingBot' },
-    title: 'InstallingBot',
+    title: 'Password Generator',
     description:
       'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum',
     redirection: 'https://github.com/St1reX/password-generator.git',

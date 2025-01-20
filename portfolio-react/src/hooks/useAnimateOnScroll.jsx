@@ -1,10 +1,8 @@
-import { use } from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function useAnimateOnScroll() {
   const [isVisible, setIsVisible] = useState(false);
-
-  const ref = useState(null)[0];
+  const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -13,19 +11,19 @@ export default function useAnimateOnScroll() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.5 }
     );
 
-    if (ref) {
-      observer.observe(ref);
+    if (ref.current) {
+      observer.observe(ref.current);
     }
 
     return () => {
-      if (ref) {
-        observer.unobserve(ref);
+      if (ref.current) {
+        observer.unobserve(ref.current);
       }
     };
-  }, [ref]);
+  }, []);
 
   return [ref, isVisible];
 }

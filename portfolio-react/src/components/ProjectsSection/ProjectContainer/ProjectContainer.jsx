@@ -12,21 +12,23 @@ export default function ProjectContainer({
   const [ref, isVisible] = useAnimateOnScroll();
 
   return (
-    <div className={optionalStyle + ' w-full flex my-8'}>
+    <div className="m-8">
       <div
         ref={ref}
-        className={`card bg-base-100 w-96 shadow-xl transform duration-500`}
+        className={`card bg-base-100 w-96 duration-700 ${
+          isVisible ? 'translate-y-0 opacity-100' : ' translate-y-8	 opacity-0'
+        }`}
       >
         <figure className="px-10 pt-10">
           <img
             src={pathCore + imgData.name}
             alt={imgData.alt}
-            className="rounded-xl"
+            className="rounded-xl h-[170px]"
           />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{cardTitle}</h2>
-          <p>{cardDescription}</p>
+          <p className="mb-6">{cardDescription}</p>
           <div className="card-actions">
             <a className="btn bg-main-green text-white" href={redirectionLink}>
               Show on Github
@@ -47,5 +49,4 @@ ProjectContainer.propTypes = {
     alt: PropTypes.string,
   }),
   pathCore: PropTypes.string.isRequired,
-  optionalStyle: PropTypes.string,
 };

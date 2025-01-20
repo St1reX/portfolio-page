@@ -14,9 +14,12 @@ function App() {
       <ProjectsSection />
       <Footer />
       <img
-        className="h-32 fixed bottom-0 right-0"
-        src="./assets/svg/undraw_cat_epte.svg"
+        className="h-32 fixed bottom-0 right-0 -mb-4 cursor-pointer"
+        src="./assets/svg/undraw_dog_jfxm.svg"
         alt="Cat Picture"
+        onClick={() => {
+          window.location.href = 'https://www.happydoggo.com';
+        }}
       />
     </>
   );
