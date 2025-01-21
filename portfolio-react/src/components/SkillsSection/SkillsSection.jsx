@@ -26,10 +26,8 @@ export default function SkillsSection() {
 
   return (
     <>
-      <div
-        className="group w-full bg-zinc-800 flex justify-between px-[15%] py-10"
-        id="Skills"
-      >
+      <div className="group w-full bg-zinc-800 flex justify-between px-[15%] py-10 relative">
+        <div className="absolute -top-40" id="Skills"></div>
         <div className="flex flex-col max-w-[50%] min-h-[40vh] min-w-[320px] mt-10">
           <h2 className="w-fit text-4xl text-white font-bold mb-6 relative">
             #Skills
