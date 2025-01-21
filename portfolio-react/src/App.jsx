@@ -5,8 +5,11 @@ import SkillsSection from './components/SkillsSection/SkillsSection';
 import ProjectsSection from './components/ProjectsSection/ProjectsSection';
 import Footer from './components/Footer/Footer';
 import LifeStorySection from './components/lifeStorySection/lifeStorySections';
+import useAnimateDocumentTitle from './hooks/useAnimateDocumentTitle';
 
 function App() {
+  useAnimateDocumentTitle();
+
   return (
     <>
       <Header />
