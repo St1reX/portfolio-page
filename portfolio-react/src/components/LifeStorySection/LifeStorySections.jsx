@@ -5,7 +5,7 @@ export default function LifeStorySection() {
     <div className="w-full px-32">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {LifeStoryData.map((record, index) => (
-          <li className="group">
+          <li className="group" key={record.title}>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

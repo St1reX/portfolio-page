@@ -7,9 +7,8 @@ export default function ProjectContainer({
   redirectionLink,
   imgData,
   pathCore,
-  optionalStyle,
 }) {
-  const [ref, isVisible] = useAnimateOnScroll();
+  const [ref, isVisible] = useAnimateOnScroll(0.4, 'over');
 
   return (
     <div className="m-8 flex">

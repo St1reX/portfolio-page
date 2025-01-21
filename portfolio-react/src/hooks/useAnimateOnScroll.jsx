@@ -1,17 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 
-export default function useAnimateOnScroll() {
+export default function useAnimateOnScroll(threshold, hookMode) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
+        if (hookMode == 'over') {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        } else if (hookMode == 'below') {
+          if (!entry.isIntersecting) {
+            setIsVisible(true);
+          }
         }
       },
-      { threshold: 0.4 }
+      { threshold }
     );
 
     if (ref.current) {
